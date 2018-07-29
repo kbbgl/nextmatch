@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NextMatch</string>
+    <string name="vs" formatted="true">   נגד</string>
+    <string name="versus">נגד</string>
 </resources>
