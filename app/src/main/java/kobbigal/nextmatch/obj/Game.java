@@ -8,9 +8,9 @@ public class Game{
     public String homeTeam;
     public String awayTeam;
     public String competition;
-    public Calendar time;
+    public String time;
 
-    public Game(String homeTeam, String awayTeam, String competition, Calendar time) {
+    public Game(String homeTeam, String awayTeam, String competition, String time) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
         this.competition = competition;
@@ -41,16 +41,16 @@ public class Game{
         this.competition = competition;
     }
 
-    public Calendar getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(Calendar time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
     @Override
     public String toString() {
-        return homeTeam + " vs " + awayTeam + " @ " + time.getTime().toString() + ", " + competition;
+        return homeTeam + " vs " + awayTeam + " @ " + time + ", " + competition;
     }
 }

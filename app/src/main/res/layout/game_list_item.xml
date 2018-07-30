@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_height="80dp"
+    android:layout_margin="8dp">
 
     <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/colorPrimary"
         android:id="@+id/cardview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:cardCornerRadius="6dp"
+        app:cardPreventCornerOverlap="true">
 
         <TextView
-            android:fontFamily="casual"
             android:text="20:30"
+            android:layout_marginTop="4dp"
             android:textSize="16sp"
             android:id="@+id/gamedate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingRight="20dp"/>
+            android:gravity="center"/>
 
         <LinearLayout
-            android:paddingTop="24dp"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -30,15 +34,13 @@
             <TextView
                 android:gravity="center"
                 android:text="ברזיל"
-                android:fontFamily="casual"
                 android:textSize="15sp"
                 android:layout_weight="3"
                 android:id="@+id/hometeam"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:fontFamily="casual"
                 android:text="@string/versus"
                 android:textSize="12sp"
                 android:textAllCaps="true"
@@ -51,10 +53,9 @@
                 android:gravity="center"
                 android:text="ארגנטינה"
                 android:textSize="15sp"
-                android:fontFamily="casual"
                 android:layout_weight="3"
                 android:id="@+id/awayteam"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content" />
 
         </LinearLayout>

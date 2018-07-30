@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    android:id="@+id/root_layout_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:gravity="center">
 
+    <TextView
+        android:id="@+id/gameday_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="התאריך היום 26/4"
+        android:fontFamily="@font/varela_round"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="16dp"
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
     <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/gameday_title"
         android:id="@+id/game_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
